@@ -35,7 +35,6 @@ router.post(
   "/register",
   checkUsernameFree,
   checkPasswordLength,
-  checkUsernameExists,
   async (req, res, next) => {
     try {
       const user = req.body;
